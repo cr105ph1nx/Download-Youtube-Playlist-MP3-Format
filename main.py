@@ -33,7 +33,7 @@ def main(c, playlist):
 
         # Rename file in /Tracks
         try:
-            os.rename("Tracks/" + _filename + ".mp3", "Tracks/Track " + c + ".mp3")
+            os.rename("Tracks/" + _filename + ".mp3", "Tracks/Track " + str(c) + ".mp3")
             c = c + 1
         except:
             print("Error: No such file or directory...")
